@@ -94,7 +94,7 @@ ShowMyDB(personalMovieDB.privat);
 
 function writeYourGenres () {
   for (let i = 1; i <= 3; i++) {
-    personalMovieDB.genres[i - 1] = (`Ваш любмый жанр под номером ${i}`);
+    personalMovieDB.genres[i - 1] = prompt(`Ваш любмый жанр под номером ${i}`);
   }
   
 }
