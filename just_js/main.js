@@ -1,23 +1,3 @@
-// function call () {
-//   console.log("Вы вызвали функцию");
-  
-// }
-
-// call();
-
-
-// let call = function () {
-//   console.log("Вы вызвали функцию");
-// };
-
-// call();
-
-// let call = (text) => {
-//   console.log(text);
-  
-// };
-// console.log(call("Вы вызвали функцию"));
-
 let a = +prompt("Введите число: ", "");
 let b = +prompt("Введите 2 число: ", "");
 let whatDo = prompt("Выберите действие(+, -, *, /)");
