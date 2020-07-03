@@ -50,9 +50,3 @@ function multiply (a, b) {
 function split (a, b) {
   return(a / b);
 }
-
-let c = 4;
-const addX = x => n => n + x;
-const addThree = addX(3);
-let d = addThree(c);
-console.log('example partial application', d);
