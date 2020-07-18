@@ -1,23 +1,20 @@
-// function call () {
-//   console.log("Вы вызвали функцию");
-  
-// }
+"use strict";
+let buttom = document.getElementById('button-text');
+let text = document.getElementById('text');
 
-// call();
+const click =  function (event) {
+  const target = event.target;
+  if (target) {
+    document.cssText = "background: black;";
+    text.cssText = "font-size: 14px; color: white; background-color: yellow;";
+    buttom.style.cssText = "background-color: red; padding: 15px; font-size: 15px;border: 1px solid black;";
+  } else {
+    buttom.style.cssText = null;
+  }
+};
 
-
-// let call = function () {
-//   console.log("Вы вызвали функцию");
-// };
-
-// call();
-
-// let call = (text) => {
-//   console.log(text);
-  
-// };
-// console.log(call("Вы вызвали функцию"));
-
+buttom.addEventListener('click', click);
+/*
 let a = +prompt("Введите число: ", "");
 let b = +prompt("Введите 2 число: ", "");
 let whatDo = prompt("Выберите действие(+, -, *, /)");
@@ -56,3 +53,56 @@ const addX = x => n => n + x;
 const addThree = addX(3);
 let d = addThree(c);
 console.log('example partial application', d);
+
+*/
+
+// let obj = {
+//   name: 'Row',
+//   sirname: 'Nope',
+//   color: {
+//     bg: 'red',
+//     border: 'black'
+//   }
+// };
+
+// for(let key in obj) {
+//   if (typeof(obj[key]) === 'object'){
+//     for (let i in obj[key]) {
+//       console.log(`Вывести ${i} и второе значение: ${obj[key][i]}`);
+//     }
+//   } else {
+//     console.log(`Вывести ${key} и второе значение: ${obj[key]}`);
+//   }
+  
+// }
+// console.log(Object.keys(obj).length);
+
+
+// Object.defineProperty(obj, "name", {
+//   writable: false,
+//   enumerable: true,
+//   configurable: false
+// });
+
+// obj.name = "Petya";
+
+// let descriptor = Object.getOwnPropertyDescriptor(obj, 'name', 'color');
+// console.log(descriptor);
+
+// деструктизация 
+// let {name = 0, color:{bg = '#060606', border = 'blue'}, sirname : sir = 'Lostly', title = 'Non'} = obj;
+// console.log(name);
+// console.log(sir);
+// console.log(bg);
+// console.log(border);
+// console.log(title);
+
+
+
+// let user = {
+//   name: "John"
+// };
+
+// let descriptor = Object.getOwnPropertyDescriptor(user, 'name');
+
+// alert( JSON.stringify(descriptor, null, 2 ) );
